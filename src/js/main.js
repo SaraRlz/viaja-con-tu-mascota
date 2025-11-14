@@ -9,3 +9,23 @@ window.addEventListener('DOMContentLoaded', () => {
     captions: true
   });
 });
+
+// Filtros de categorias
+const botones = document.querySelectorAll(".filtros button");
+const tarjetas = document.querySelectorAll(".tarjeta");
+
+botones.forEach(boton => {
+  boton.addEventListener("click", () => {
+    const filtro = boton.dataset.filter;
+
+    tarjetas.forEach(tarjeta => {
+      const categoria = tarjeta.dataset.categoria;
+
+      if (filtro === "todos" || categoria === filtro) {
+        tarjeta.style.display = "block";
+      } else {
+        tarjeta.style.display = "none";
+      }
+    });
+  });
+});
