@@ -1,0 +1,15 @@
+Nombre	Formato Original	Formato Nuevo	Peso Original (KB)	Peso Optimizado (KB)	Reducción (%)
+El-Bierzo.jpg	jpg	jpg	51.67	51.67	0
+picos-de-Europa-2.jpg	jpg	jpg	95.98	95.98	0
+Picos-de-Europa.jpg	jpg	jpg	94.16	94.16	0
+ruta-miniatura-video-2.jpg	jpg	jpg	37.56	37.56	0
+ruta-miniatura-video.jpg	jpg	jpg	63.61	63.61	0
+bierzo-2.jpg	jpg	webp	219.17	240.67	-9.81
+bierzo-3.jpg	jpg	webp	368.59	293.50	20.37
+bierzo-1.jpg	jpg	webp	1240.33	220.57	82.22
+Parque-natural-de-Corralejo.jpg	jpg	webp	3033.14	137.39	95.47
+picos-de-Europa-1.jpg	jpg	webp	924.94	83.98	90.92
+Perro-viajando.jpg	jpg	webp	264.26	54.96	79.20
+picos-de-Europa-3.jpg	jpg	webp	476.09	197.39	58.54
+Parque-natural-de-la-Albufera.jpg	jpg	webp	5937.06	227.13	96.17
+Playa-de-la-Lanzada.jpg	jpg	webp	1207.90	151.19	87.48

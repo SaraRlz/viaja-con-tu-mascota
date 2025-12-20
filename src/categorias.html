@@ -5,77 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Categorías</title>
 </head>
-
 <body>
   <header id="principiocategorias" class="hero">
     <img class="hero-img" alt="Perro viajando" src="./assets/images/Perro-viajando.jpg">
     <div class="hero-content">
-    <h1>Viaja con tu mascota</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="#main-content">Categorías</a></li>
-        <li><a href="links.html">Enlaces</a></li>
-      </ul>
-    </nav>
+      <h1>Viaja con tu mascota</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="#main-content">Categorías</a></li>
+          <li><a href="links.html">Enlaces</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-<h2 class="categorias-titulo">Explora destinos</h2>
-<p class="categorias-texto"> Elige el filtro según la naturaleza del destino al que deseas ir:</p>
+  <h2 class="categorias-titulo">Explora destinos</h2>
+  <p class="categorias-texto">Elige el filtro según la naturaleza del destino al que deseas ir:</p>
 
-<div class="filtros">
-  <button data-filter="todos">Todos</button>
-  <button data-filter="playa">Playa</button>
-  <button data-filter="montaña">Montaña</button>
-  <button data-filter="rural">Rural</button>
-  <button data-filter="campo">Campo</button>
-</div>
+  <div class="filtros">
+    <button data-filter="todos">Todos</button>
+    <button data-filter="playa">Playa</button>
+    <button data-filter="montaña">Montaña</button>
+    <button data-filter="rural">Rural</button>
+    <button data-filter="campo">Campo</button>
+  </div>
 
-  <main id="main-content" class="categoria">
-    <div class="item-categoria">
-      <article class="tarjeta" data-categoria="rural">
-        <a href="det1.html">
-        <img alt="El Bierzo" src="./assets/images/El-Bierzo.jpg">
+ <main id="main-content" class="categoria">
+  <div class="tarjetas"> 
+
+    <article class="tarjeta" data-categoria="rural">
+
+      <a href="det1.html">
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/El-Bierzo.jpg?as=jpg&width=480" type="image/jpg">
+          <source media="(min-width:481px) and (max-width:1024px)" srcset="./assets/images/El-Bierzo.jpg?as=jpg&width=800" type="image/jpg">
+          <source media="(min-width:1025px)" srcset="./assets/images/El-Bierzo.jpg?as=jpg&width=1200" type="image/jpg">
+          <img src="./assets/images/El-Bierzo.jpg" alt="El Bierzo" loading="lazy">
+        </picture>
         <h3>El Bierzo, León</h3>
-        <p>Declarada la ciudad más “dog-friendly” del año 2019, con sus múltiples rutas y senderos libres de aglomeraciones tu amigo peludo disfrutará de la naturaleza como nunca.</p>
-        </a>
-      </article>
+        <p>Declarada la ciudad más “dog-friendly” del año 2019.</p>
+      </a>
+    </article>
 
-      <article class="tarjeta" data-categoria="montaña">
-        <a href="det2.html">
-        <img alt="Picos de Europa" src="./assets/images/Picos-de-Europa.jpg">
+    <article class="tarjeta" data-categoria="montaña">
+      <a href="det2.html">
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/Picos-de-Europa.jpg?as=jpg&width=480" type="image/jpg">
+          <source media="(min-width:481px) and (max-width:1024px)" srcset="./assets/images/Picos-de-Europa.jpg?as=jpg&width=800" type="image/jpg">
+          <source media="(min-width:1025px)" srcset="./assets/images/Picos-de-Europa.jpg?as=jpg&width=1200" type="image/jpg">
+          <img src="./assets/images/Picos-de-Europa.jpg" alt="Picos de Europa" loading="lazy">
+        </picture>
         <h3>Picos de Europa, Asturias</h3>
-        <p>Uno de los mejores destinos para viajar con perros en España. Hay multitud de hoteles por la zona que admiten perros de todos los tamaños y sin coste extra. En su cercanías además hay multitud de rutas para que tu amigo y tú seáis grandes aventureros.</p>
-        </a>
-      </article>
-
-      <article class="tarjeta" data-categoria="playa">
-      <a href="#">
-      <img alt="Parque Natural de Corralejo" src="./assets/images/Parque-natural-de-Corralejo.jpg">
-      <h3>Parque Natural de Corralejo, Fuerteventura</h3>
-      <p>Dunas y playas espectaculares donde tu mascota puede correr libremente mientras tú disfrutas del paisaje volcánico.</p>
+        <p>Uno de los mejores destinos para viajar con perros en España.</p>
       </a>
-      </article>
+    </article>
 
-      <article class="tarjeta" data-categoria="campo">
+    <article class="tarjeta" data-categoria="playa">
       <a href="#">
-      <img alt="Parque Natural de la Albufera" src="./assets/images/Parque-natural-de-la-Albufera.jpg">
-      <h3>Parque Natural de la Albufera, Valencia</h3>
-      <p>Lagos y senderos naturales donde los perros son bienvenidos y pueden pasear libremente por el parque.</p>
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=480" type="image/webp">
+          <source media="(min-width:481px) and (max-width:1024px)" srcset="./assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=800" type="image/webp">
+          <source media="(min-width:1025px)" srcset="./assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=1200" type="image/webp">
+          <img src="./assets/images/Parque-natural-de-Corralejo.jpg" alt="Parque Natural de Corralejo" loading="lazy">
+        </picture>
+        <h3>Parque Natural de Corralejo, Fuerteventura</h3>
+        <p>Dunas y playas donde tu mascota puede correr libremente.</p>
       </a>
-      </article>
+    </article>
 
-      <article class="tarjeta" data-categoria="playa">
+    <article class="tarjeta" data-categoria="campo">
       <a href="#">
-      <img alt="Playa de A Lanzada" src="./assets/images/Playa-de-la-Lanzada.jpg">
-      <h3>Playa de A Lanzada, Pontevedra</h3>
-      <p>Una gran playa abierta, ideal para pasear y jugar con tu perro accesible y popular entre los amantes de mascotas.</p>
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=480" type="image/webp">
+          <source media="(min-width:481px) and (max-width:1024px)" srcset="./assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=800" type="image/webp">
+          <source media="(min-width:1025px)" srcset="./assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=1200" type="image/webp">
+          <img src="./assets/images/Parque-natural-de-la-Albufera.jpg" alt="Parque Natural de la Albufera" loading="lazy">
+        </picture>
+        <h3>Parque Natural de la Albufera, Valencia</h3>
+        <p>Lagos y senderos naturales donde los perros son bienvenidos.</p>
       </a>
-      </article>
-    </div>
-  </main>
-      <a class="volver-arriba" href="#principiocategorias">Volver arriba</a>
+    </article>
+
+    <article class="tarjeta" data-categoria="playa">
+      <a href="#">
+        <picture>
+          <source media="(max-width:480px)" srcset="./assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=480" type="image/webp">
+          <source media="(min-width:481px) and (max-width:1024px)" srcset="./assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=800" type="image/webp">
+          <source media="(min-width:1025px)" srcset="./assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=1200" type="image/webp">
+          <img src="./assets/images/Playa-de-la-Lanzada.jpg" alt="Playa de A Lanzada" loading="lazy">
+        </picture>
+        <h3>Playa de A Lanzada, Pontevedra</h3>
+        <p>Una gran playa abierta, ideal para pasear y jugar con tu perro.</p>
+      </a>
+    </article>
+
+  </div>
+</main>
+
+  <a class="volver-arriba" href="#principiocategorias">Volver arriba</a>
 
   <footer>
     <p>&copy; 2025 Viaja con tu mascota.</p>

@@ -3,11 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Bierzo</title>
+  <title>Picos de Europa</title>
 </head>
 <body>
   <header class="hero">
-    <img class="hero-img" alt="El Bierzo" src="assets/images/bierzo-3.jpg">
+
+    <picture class="hero-img">
+    <source 
+      media="(max-width: 480px)" 
+      srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=480" 
+      type="image/jpg">
+
+    <source 
+      media="(min-width: 481px) and (max-width: 1024px)" 
+      srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=800" 
+      type="image/jpg">
+
+    <source 
+      media="(min-width: 1025px)" 
+      srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=1200" 
+      type="image/jpg">
+
+    <img 
+      src="assets/images/Picos-de-Europa-3.jpg" 
+      alt="Picos-de-Europa" 
+      loading="lazy"
+      style="
+        width: 100%;
+        height: 60vh; 
+        object-fit: cover; 
+        object-position: center center;">
+  </picture>
+
     <div class="hero-content">
       <h1>Picos de Europa, Asturias</h1>
       <nav>
@@ -30,14 +57,44 @@
     <section class="galeria">
       <h2>Galería</h2>
       <div class="imagenes">
-        <a href="./assets/images/bierzo-1.jpg"><img src="./assets/images/picos-de-Europa-1.jpg" alt="Paisaje de Picos de Europa"></a>    
-        <a href="./assets/images/bierzo-2.jpg"><img src="./assets/images/picos-de-Europa-2.jpg" alt="Paisaje de Picos de Europa"></a>    
-        <a href="./assets/images/bierzo-3.jpg"><img src="./assets/images/picos-de-Europa-3.jpg" alt="Paisaje de Picos de Europa"></a>    
-         <a href="https://www.youtube.com/watch?v=FHgKpk1SyAM" data-type="youtube" data-caption="Video de Picos de Europa"> Vídeo de Picos de Europa
-    <img src="assets/images/ruta-miniatura-video-2.jpg" alt="Video de Picos de Europa">
-  </a>  
+
+        <a href="assets/images/picos-de-Europa-1.jpg">
+        <picture>
+        <source media="(max-width:480px)" srcset="assets/images/picos-de-Europa-1.jpg?as=webp&width=480" type="image/webp">
+        <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/picos-de-Europa-1.jpg?as=webp&width=800" type="image/webp">
+        <source media="(min-width:1025px)" srcset="assets/images/picos-de-Europa-1.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/picos-de-Europa-1.jpg" alt="Picos de Europa" loading="lazy">     
+        </picture>
+      </a>
+
+      <a href="assets/images/picos-de-Europa-2.jpg">
+        <picture>
+        <source media="(max-width:480px)" srcset="assets/images/picos-de-Europa-2.jpg?as=webp&width=480" type="image/webp">
+        <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/picos-de-Europa-2.jpg?as=webp&width=800" type="image/webp">
+        <source media="(min-width:1025px)" srcset="assets/images/picos-de-Europa-2.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/picos-de-Europa-2.jpg" alt="Picos de Europa" loading="lazy">     
+        </picture>
+      </a>
+
+      <a href="assets/images/picos-de-Europa-3.jpg">
+        <picture>
+        <source media="(max-width:480px)" srcset="assets/images/picos-de-Europa-3.jpg?as=webp&width=480" type="image/webp">
+        <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/picos-de-Europa-3.jpg?as=webp&width=800" type="image/webp">
+        <source media="(min-width:1025px)" srcset="assets/images/picos-de-Europa-3.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/picos-de-Europa-3.jpg" alt="Picos de Europa" loading="lazy">     
+        </picture>
+      </a>
+      
      </div>
     </section>
+
+    <div class="video-container">
+    <iframe
+    src="https://www.youtube.com/embed/FHgKpk1SyAM"
+    title="Video de Picos de Europa"
+    allowfullscreen>
+    </iframe>
+    </div>
 
     <a href="categorias.html" class="volver-arriba">Volver a Categorías</a>
   </main>

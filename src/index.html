@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Viaja con tu mascota</title>
+</head>
 
 <body>
-
   <!--Header Hero -->
   <header id="principio" class="hero">
     <img class="hero-img" alt="Perro viajando" src="./assets/images/Perro-viajando.jpg">
@@ -23,57 +23,96 @@
   </header>
 
   <main id="contenido">
-    <section class="introduccion">
-      <p>¡Descubre los mejores destinos pet-friendly para tu mejor amigo y para ti!</p>
-    </section>
+  <div class="huella-container">
+  <svg class="huella" viewBox="0 0 80 80" width="150" height="150">
+  <ellipse cx="43" cy="40" rx="16" ry="13"/>
+  <ellipse cx="24" cy="24" rx="5" ry="7"/>
+  <ellipse cx="36" cy="16" rx="5" ry="7"/>
+  <ellipse cx="50" cy="16" rx="5" ry="7"/>
+  <ellipse cx="62" cy="24" rx="5" ry="7"/>
+  </svg>
+  </div>
 
-    <!--Tarjetas de destinos destacados -->
-    <section class="destacados">
-      <h2>Destinos destacados</h2>
-      <div class="tarjetas">
+  <section class="introduccion">
+    <p>¡Descubre los mejores destinos pet-friendly para tu mejor amigo y para ti!</p>
+  </section>
 
-        <article class="tarjeta">
-        <img alt="El Bierzo" src="./assets/images/El-Bierzo.jpg">
-        <h3>El Bierzo, León</h3>
-        <p>Declarada la ciudad más “dog-friendly” del año 2019, con sus múltiples rutas y senderos libres de aglomeraciones tu amigo peludo disfrutará de la naturaleza como nunca.</p>
-        <a href="det1.html">Más información</a>
-        </article>
+<!--Tarjetas de destacados-->
+<section class="destacados">
+  <h2>Destinos destacados</h2>
+  <div class="tarjetas">
 
-        <article class="tarjeta">
-        <img alt="Picos de Europa" src="./assets/images/Picos-de-Europa.jpg">
-        <h3>Picos de Europa, Asturias</h3>
-        <p>Uno de los mejores destinos para viajar con perros en España. Hay multitud de hoteles por la zona que admiten perros de todos los tamaños y sin coste extra. En su cercanías además hay multitud de rutas para que tu amigo y tú seáis grandes aventureros.</p>
-        <a href="det2.html">Más información</a>
-        </article>
+    <!-- El Bierzo -->
+    <article class="tarjeta">
+      <picture>
+        <source srcset="assets/images/El-Bierzo.jpg?as=jpg&width=400" type="image/jpg">
+        <source srcset="assets/images/El-Bierzo.jpg?as=jpg&width=800" type="image/jpg">
+        <source srcset="assets/images/El-Bierzo.jpg?as=jpg&width=1200" type="image/jpg">
+        <img src="assets/images/El-Bierzo.jpg" alt="Paisaje natural del Bierzo" loading="lazy">
+      </picture>
+      <h3>El Bierzo, León</h3>
+      <p>Declarada la ciudad más “dog-friendly” del año 2019, con múltiples rutas y senderos libres de aglomeraciones.</p>
+      <a href="det1.html">Más información</a>
+    </article>
 
-        <article class="tarjeta">
-        <img alt="Parque Natural de Corralejo" src="./assets/images/Parque-natural-de-Corralejo.jpg">
-        <h3>Parque Natural de Corralejo, Fuerteventura</h3>
-        <p>Dunas y playas espectaculares donde tu mascota puede correr libremente mientras tú disfrutas del paisaje volcánico.</p>
-        <a href="#">Más información</a>
-        </article>
+    <!-- Picos de Europa -->
+    <article class="tarjeta">
+      <picture>
+        <source srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=400" type="image/jpg">
+        <source srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=800" type="image/jpg">
+        <source srcset="assets/images/Picos-de-Europa.jpg?as=jpg&width=1200" type="image/jpg">
+        <img src="assets/images/Picos-de-Europa.jpg" alt="Paisaje de Picos de Europa" loading="lazy">
+      </picture>
+      <h3>Picos de Europa, Asturias</h3>
+      <p>Uno de los mejores destinos para viajar con perros en España. Hay multitud de rutas y alojamientos pet-friendly.</p>
+      <a href="det2.html">Más información</a>
+    </article>
 
-        <article class="tarjeta">
-        <img alt="Parque Natural de la Albufera" src="./assets/images/Parque-natural-de-la-Albufera.jpg">
-        <h3>Parque Natural de la Albufera, Valencia</h3>
-        <p>Lagos y senderos naturales donde los perros son bienvenidos y pueden pasear libremente por el parque.</p>
-        <a href="#">Más información</a>
-        </article>
+    <!-- Parque Natural de Corralejo -->
+    <article class="tarjeta">
+      <picture>
+        <source srcset="assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=400" type="image/webp">
+        <source srcset="assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=800" type="image/webp">
+        <source srcset="assets/images/Parque-natural-de-Corralejo.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/Parque-natural-de-Corralejo.jpg" alt="Parque natural de Corralejo" loading="lazy">
+      </picture>
+      <h3>Parque Natural de Corralejo, Fuerteventura</h3>
+      <p>Dunas y playas espectaculares donde tu mascota puede correr libremente mientras disfrutas del paisaje volcánico.</p>
+      <a href="#">Más información</a>
+    </article>
 
-        <article class="tarjeta">
-        <img alt="Playa de A Lanzada" src="./assets/images/Playa-de-la-Lanzada.jpg">
-        <h3>Playa de A Lanzada, Pontevedra</h3>
-        <p>Una gran playa abierta, ideal para pasear y jugar con tu perro accesible y popular entre los amantes de mascotas.</p>
-        <a href="#">Más información</a>
-        </article>
+    <!-- Parque Natural de la Albufera -->
+    <article class="tarjeta">
+      <picture>
+        <source srcset="assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=400" type="image/webp">
+        <source srcset="assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=800" type="image/webp">
+        <source srcset="assets/images/Parque-natural-de-la-Albufera.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/Parque-natural-de-la-Albufera.jpg" alt="Parque Natural de la Albufera" loading="lazy">
+      </picture>
+      <h3>Parque Natural de la Albufera, Valencia</h3>
+      <p>Lagos y senderos naturales donde los perros son bienvenidos y pueden pasear libremente por el parque.</p>
+      <a href="#">Más información</a>
+    </article>
 
-      </div>
-    </section>
-  </main>
+    <!-- Playa de A Lanzada -->
+    <article class="tarjeta">
+      <picture>
+        <source srcset="assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=400" type="image/webp">
+        <source srcset="assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=800" type="image/webp">
+        <source srcset="assets/images/Playa-de-la-Lanzada.jpg?as=webp&width=1200" type="image/webp">
+        <img src="assets/images/Playa-de-la-Lanzada.jpg" alt="Playa de A Lanzada" loading="lazy">
+      </picture>
+      <h3>Playa de A Lanzada, Pontevedra</h3>
+      <p>Una gran playa abierta, ideal para pasear y jugar con tu perro, accesible y popular entre los amantes de mascotas.</p>
+      <a href="#">Más información</a>
+    </article>
+  </div>
+</section>
+</main>
   
   <a class="volver-arriba" href="#principio">Volver arriba</a>
 
-   <!--Copyright-->
+  <!--Copyright-->
   <footer>
     <p>&copy; 2025 Viaja con tu mascota. Todos los derechos reservados.</p>
   </footer>
