@@ -28,7 +28,8 @@
     <img 
       src="assets/images/bierzo-3.jpg" 
       alt="El Bierzo, León" 
-      loading="lazy"
+      decoding="async" 
+      fetchpriority="high"
       style="
         width: 100%;
         height: 60vh; 
@@ -66,7 +67,7 @@
         <source media="(max-width:480px)" srcset="assets/images/bierzo-1.jpg?as=webp&width=480" type="image/webp">
         <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/bierzo-1.jpg?as=webp&width=800" type="image/webp">
         <source media="(min-width:1025px)" srcset="assets/images/bierzo-1.jpg?as=webp&width=1200" type="image/webp">
-        <img src="assets/images/bierzo-1.jpg" alt="Paisaje del Bierzo" loading="lazy">
+        <img src="assets/images/bierzo-1.jpg" alt="Paisaje del Bierzo" decoding="async"  loading="lazy">
         </picture>
       </a>
 
@@ -75,7 +76,7 @@
         <source media="(max-width:480px)" srcset="assets/images/bierzo-2.jpg?as=webp&width=480" type="image/webp">
         <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/bierzo-2.jpg?as=webp&width=800" type="image/webp">
         <source media="(min-width:1025px)" srcset="assets/images/bierzo-2.jpg?as=webp&width=1200" type="image/webp">
-        <img src="assets/images/bierzo-2.jpg" alt="Paisaje del Bierzo" loading="lazy">
+        <img src="assets/images/bierzo-2.jpg" alt="Paisaje del Bierzo" decoding="async" loading="lazy">
         </picture>
       </a>
 
@@ -84,7 +85,7 @@
          <source media="(max-width:480px)" srcset="assets/images/bierzo-3.jpg?as=webp&width=480" type="image/webp">
         <source media="(min-width:481px) and (max-width:1024px)" srcset="assets/images/bierzo-3.jpg?as=webp&width=800" type="image/webp">
         <source media="(min-width:1025px)" srcset="assets/images/bierzo-3.jpg?as=webp&width=1200" type="image/webp">
-        <img src="assets/images/bierzo-3.jpg" alt="Paisaje del Bierzo" loading="lazy">
+        <img src="assets/images/bierzo-3.jpg" alt="Paisaje del Bierzo" decoding="async" loading="lazy">
         </picture>
       </a>
 
@@ -95,6 +96,8 @@
       <iframe
       src="https://www.youtube.com/embed/Gy7pEzp-sSY"
       title="Vídeo del Bierzo"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
       allowfullscreen>
       </iframe> 
     </div>
